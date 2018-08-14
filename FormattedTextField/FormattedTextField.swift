@@ -114,7 +114,7 @@ open class FormattedTextField: UITextField {
             return super.attributedText
         }
         set(value) {
-            assertionFailure("masked text field unsupports attributed text")
+            self.text = value?.string
         }
     }
 
